@@ -1,0 +1,53 @@
+/* Add mobile styles for the component here.  */
+.home-panel {
+    width: 100%;
+    height: 100%;
+}
+.button-select {
+    border-radius: 50%;
+    width: 50%;
+    background: white;
+    color: black;
+    font-weight: bold;
+    height: 100px;
+}
+.button-exit {
+    border-radius: 100%;
+    width: 10%;
+    color: white;
+    font-weight: bold;
+}
+.block1 {
+    background: yellow;
+    height: 35%;
+}
+.block2 {
+    background: rgb(18, 151, 228);
+    height: 65%;
+}
+.cube {
+    border-radius: 50%;
+    z-index: 999;
+    position: relative;
+}
+.text {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30%;
+    opacity: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+.text-animation {
+    text-align: center;
+    font-weight: bold;
+}
+.title-animation {
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.hidden-section {
+    background: rgb(18, 151, 228); 
+}

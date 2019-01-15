@@ -1,0 +1,33 @@
+<ActionBar title="Demo" class="action-bar">
+</ActionBar>
+
+<FlexboxLayout flexDirection="column" alignItems="stretch" class="home-panel">
+    <StackLayout class="block1">
+    </StackLayout>
+    <StackLayout class="block2" verticalAlignment="bottom" #block2>
+        <StackLayout marginTop="110">
+            <Label text="Demo de prueba" class="text-animation" #description></Label>
+            <AbsoluteLayout>
+                <Label height="40" class="hidden-section" width="100%"></Label>
+                <GridLayout width="100%">
+                    <Label text="RECUADRO ROJO" class="title-animation" #title></Label>
+                </GridLayout>
+            </AbsoluteLayout>
+        </StackLayout>
+        <AbsoluteLayout>
+            <Label height="40" class="hidden-section" width="100%"></Label>
+            <GridLayout width="100%">
+                <Button text="VER DATOS" class="btn button-select" (tap)="selectData()" #buttonAnimation></Button>
+            </GridLayout>
+        </AbsoluteLayout>
+    </StackLayout>
+    <StackLayout marginTop="-500">
+        <Label width="100" height="350" backgroundColor="red" #cube class="cube"></Label>
+    </StackLayout>
+    <StackLayout marginTop="-340" marginRight="-100">
+        <Button text="X" class="btn button-exit" (tap)="exitData()" #button></Button>
+    </StackLayout>
+    <StackLayout verticalAlignment="bottom" horizontalAligment="center">
+        <Label text="Título: Demo" #data class="text"></Label>
+    </StackLayout>
+</FlexboxLayout>

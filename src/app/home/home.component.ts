@@ -40,8 +40,8 @@ export class HomeComponent implements OnInit {
   animateCentralSection() {
     this.cube.nativeElement.animate({
       duration: 650,
-      curve: AnimationCurve.easeOut,
-      translate: { x: -200, y: 0 }
+      translate: { x: -200, y: 0 },
+      curve: AnimationCurve.easeInOut
     });
   }
 
@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
     });
     this.data.nativeElement.animate({
       opacity: 1,
-      duration: 1000
+      duration: 1200
     });
   }
 
@@ -74,7 +74,8 @@ export class HomeComponent implements OnInit {
     }).then(() => {
       this.block2.nativeElement.animate({
         scale: { x: 1, y: 1.5 },
-        curve: AnimationCurve.easeOut,
+        curve: AnimationCurve.easeInOut,
+        duration: 500
       })
     });
     this.title.nativeElement.animate({
@@ -92,6 +93,7 @@ export class HomeComponent implements OnInit {
     this.block2.nativeElement.animate({
       scale: { x: 1, y: 1 },
       curve: AnimationCurve.easeInOut,
+      duration: 500
     });
     this.title.nativeElement.animate({
       curve: AnimationCurve.linear,
@@ -112,7 +114,7 @@ export class HomeComponent implements OnInit {
   reverseAnimationCentralSection() {
     this.cube.nativeElement.animate({
       duration: 650,
-      curve: AnimationCurve.easeOut,
+      curve: AnimationCurve.easeInOut,
       translate: { x: 0, y: 0 }
     });
   }
@@ -125,7 +127,7 @@ export class HomeComponent implements OnInit {
     });
     this.data.nativeElement.animate({
       opacity: 0,
-      duration: 900,
+      duration: 700,
     });
     this.data.nativeElement.animate({
       duration: 900,
